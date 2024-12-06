@@ -1,0 +1,47 @@
+<div class="header-mobile" id="header-mobile">
+  <div class="wrapper h-full">
+    <div class="header-mobile__container">
+      <button
+        aria-label="Открыть меню"
+        class="header-mobile__burger"
+        id="mobile-menu-btn"
+      ></button>
+      <a href="/" class="header-mobile__logo">
+        <svg>
+          <use xlink:href="./img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <ul class="header-mobile__user-menu">
+        <li class="header-user-menu-item">
+          <div class="header-profile">
+            <a href="#" class="header-profile__auth-icon header-profile__auth-icon--mobile">
+              <svg>
+                <use xlink:href="./img/sprite.svg#search"></use></svg
+            ></a>
+          </div>
+        </li>
+        <li class="header-user-menu-item">
+          <div class="header-cart">
+            <a href="#">
+              <svg>
+                <use xlink:href="./img/sprite.svg#phone"></use></svg
+              ><span class="visually-hidden">Корзина</span></a
+            >
+          </div>
+        </li>
+      </ul>
+      <form class="header-search header-search--mobile">
+        <div class="header-search__wrapper">
+          <svg class="header-search__icon header-search__icon--search">
+            <use xlink:href="./img/sprite.svg#search"></use>
+          </svg>
+          <input class="header-search__input" type="text" placeholder="Поиск" />
+          <svg class="header-search__icon header-search__icon--close">
+            <use xlink:href="./img/sprite.svg#close--sm"></use>
+          </svg>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+@@include('./header-mobile-menu.html')

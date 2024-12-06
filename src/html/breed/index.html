@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Разные породы. Разные потребности</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/breed.css" />
+  </head>
+  <body>
+    @@include('../blocks/header.html')
+    <main class="main-content breed">
+      @@include('../blocks/breadcrumbs.html', {'paths': ['Главная', 'Породы',
+      'Собаки']})
+      <div class="wrapper">
+        <div class="breed__container">
+          <h1 class="h1 breed__title">Разные породы. Разные потребности</h1>
+          <p class="breed__description">
+            Каждый продукт разрабатывается с учетом пищевых потребностей,
+            связанных с особенностями здоровья вашего питомца, в соответствии с
+            его породой, возрастом и образом жизни.
+          </p>
+
+          @@include('../blocks/breed-search.html', {'isRight': ''})
+          <div class="breed__items">
+            @@include('../blocks/filter.html', {'title': 'породы'})
+            @@include('../blocks/article-breeds.html', {'title': 'Миниатюрные',
+            'subtitle': 'для собак весом до 4 кг'})
+            @@include('../blocks/article-breeds.html', {'title': 'Мелкие',
+            'subtitle': 'для собак весом от 5 до 10 кг'})
+            <div class="breed-secondary-article">
+              @@include('../blocks/article-breeds.html', {'title': 'Средние',
+              'subtitle': 'для собак весом от 11 до 25 кг'})
+              @@include('../blocks/article-breeds.html', {'title': 'Крупные',
+              'subtitle': 'для собак весом от 26 до 44 кг'})
+            </div>
+            @@include('../blocks/article-breeds.html', {'title': 'Очень крупные',
+            'subtitle': ' для собак весом более 45 кг'})
+          </div>
+
+          @@include('../blocks/breed-search.html', {'isRight': true})
+          @@include('../blocks/catalog-product-card.html', {'isRight': '', 'filled': ''})
+        </div>
+      </div>
+    </main>
+    @@include('../blocks/footer.html')
+    <script src="/js/index.bundle.js"></script>
+    <script src="/js/breed.bundle.js"></script>
+  </body>
+</html>

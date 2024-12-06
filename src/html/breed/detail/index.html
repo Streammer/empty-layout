@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Разные породы. Разные потребности</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/breed-detail.css" />
+  </head>
+  <body>
+    @@include('../../blocks/header.html')
+    <main class="main-content breed-detail">
+      @@include('../../blocks/breadcrumbs.html', {'paths': ['Главная', 'Породы',
+      'Каталог пород', 'Английский той терьер']})
+      <div class="wrapper">
+        <div class="breed-detail__container">
+          <h1 class="h1 breed-detail__title">
+            Разные породы. Разные потребности
+          </h1>
+          <div class="ui-header-meta">
+            <span class="article-card__date">13.06.2023</span>
+            <div class="ui-time-to-read">
+              <span class="ui-time-to-read__icon"
+                ><svg>
+                  <use xlink:href="../../img/sprite.svg#time"></use>
+                </svg> </span
+              ><span class="ui-time-to-read__title short"> Время чтения </span>
+              4 мин
+            </div>
+            <div class="ui-views-counter">
+              <span class="ui-views-counter__icon"
+                ><svg>
+                  <use xlink:href="../../img/sprite.svg#eye"></use>
+                </svg>
+              </span>
+              56 370
+              <span class="ui-views-counter__title short">просмотров</span>
+            </div>
+          </div>
+          <div class="breed-detail__image-container">
+            <img
+              class="breed-detail__image"
+              src="../../img/breed-detail-dog.png"
+              alt="Собака"
+            />
+            <p class="breed-detail__image-description text-body">
+              <span>Английский той терьер</span> — эти короткошерстные терьеры
+              произошли от манчестерских терьеров (которые, предположительно,
+              также относятся к предкам доберманов), хотя той терьеры ведут свой
+              род из более западной части страны, из района Ливерпульских доков.
+            </p>
+          </div>
+          <div class="breed-detail__content">
+            <h2 class="h2-medium">Содержание</h2>
+            <ul class="ui-list">
+              <li class="ui-list__item">
+                <a class="ui-list__link" href="#">
+                  Преимущества покупки собаки у заводчика
+                </a>
+              </li>
+              <li class="ui-list__item">
+                <a class="ui-list__link" href="#"
+                  >Факторы, которые нужно учитывать при покупке собаки у
+                  заводчика</a
+                >
+              </li>
+              <li class="ui-list__item">
+                <a class="ui-list__link" href="#">Где купить собаку</a>
+              </li>
+              <li class="ui-list__item">
+                <a class="ui-list__link" href="#"
+                  >Важные советы при покупке щенка</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="breed-detail__content">
+            @@include('../../blocks/ui-tabs-breed.html')
+          </div>
+          <div class="breed-detail__content">
+            <h2 class="h2-medium">Об английском той терьере</h2>
+            <p class="text-body">
+              Как видно из названия породы, эти собаки сочетают в себе качества
+              терьера с миниатюрностью, хотя размерные характеристики в
+              программе разведения вскоре оказались доминирующими. Раньше собак
+              этой породы использовали для ловли крыс в большом количестве,
+              поэтому их отличает бдительность и отсутствие излишней
+              нервозности.
+              <br /><br />Эти очаровательные собачки очень игривы и подходят для
+              любых условий содержания. Наследие терьеров одарило их
+              любознательностью и энергичностью, при этом они с радостью могут
+              провести весь день дома с семьей своих владельцев.
+              <br /><br />Источник: основные факты и характеристики получены от
+              Международной кинологической федерации (FCI)
+            </p>
+          </div>
+          @@include('../../blocks/recomendation-products.html')
+          @@include('../../blocks/recomendation-products-breed.html')
+          @@include('../../blocks/article-section.html', {"title": "Статьи, которые могут быть вам интересны"})
+          @@include('../../blocks/article-detail-sources-section.html')
+        </div>
+      </div>
+          @@include('../../blocks/article-like-dislike.html')
+    </main>
+    @@include('../../blocks/footer.html')
+    <script src="../../js/index.bundle.js"></script>
+    <script src="../../js/breed-detail.bundle.js"></script>
+  </body>
+</html>

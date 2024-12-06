@@ -1,0 +1,40 @@
+<div class="header-mobile-menu">
+  <div class="wrapper">
+    <div class="header-mobile-menu__container">
+      <nav>
+        <ul class="header-mobile-menu__navigation">
+          @@include('./header-mobile-menu-item.html', {'title': 'Продукты'})
+          @@include('./header-mobile-menu-item.html', {'title': 'Кошки'})
+          @@include('./header-mobile-menu-item.html', {'title': 'Собаки'})
+          @@include('./header-mobile-menu-item.html', {'title': 'Здоровое питание'})
+          @@include('./header-mobile-menu-item.html', {'title': 'Где купить'})
+          @@include('./header-mobile-menu-item.html', {'title': 'Статьи'})
+          @@include('./header-mobile-menu-item.html', {'title': 'о нас'})
+          @@include('./header-mobile-menu-item.html', {'title': 'Связаться с нами'})
+          @@include('./header-mobile-menu-item.html', {'title': 'доставка'})
+          <li class="header-mobile-menu__navigation-item club">
+            <a href="#" class="header-mobile-menu__navigation-item-link club">
+              <span> ROYAL&nbsp;CANIN<sup>®</sup> Клуб </span>
+            </a>
+          </li>
+          <li class="header-mobile-menu__navigation-item external">
+            <a href="#" class="header-mobile-menu__navigation-item-external">
+              <svg>
+                <use xlink:href="./img/sprite.svg#copy"></use>
+              </svg>
+              <span>Для заводчиков</span></a
+            >
+          </li>
+          <li class="header-mobile-menu__navigation-item external">
+            <a href="#" class="header-mobile-menu__navigation-item-external">
+              <svg>
+                <use xlink:href="./img/sprite.svg#copy"></use>
+              </svg>
+              <span>Для ветеринарных врачей</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

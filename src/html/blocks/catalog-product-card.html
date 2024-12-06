@@ -1,0 +1,25 @@
+<div class="catalog-product-card">
+    @@if (isRight) {
+        <img
+        src="/img/product-card-1.jpg"
+        class="catalog-product-card__image catalog-product-card__image--toRight"
+      />
+    } 
+    @@if(!isRight) {
+        <img
+        src="/img/product-card-1.jpg"
+        class="catalog-product-card__image"
+      />
+    }
+  <div class="catalog-product-card__text-container">
+    <h2 class="catalog-product-card__title h2">Котенок</h2>
+    <p class="catalog-product-card__subtitle">С рождения до 1 года</p>
+    <p class="catalog-product-card__text text-body">
+      Продукты, поддерживающие формирование естественных механизмов защиты,
+      гармоничное развитие и работу пищеварительной системы у котят.
+    </p>
+    <a href="#" class="ui-button catalog-product-card__button @@if(filled) {filled}">
+      Посмотреть продукты
+    </a>
+  </div>
+</div>

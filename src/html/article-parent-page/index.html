@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/article-parent.css" />
+  </head>
+  <body>
+    @@include('../blocks/header.html')
+    <main class="main-content article-parent-content">
+      @@include('../blocks/breadcrumbs.html', {'paths': ['Главная', 'Забота о здоровье вашей кошки']})
+      <div class="wrapper article-parent-header">
+        <div class="article-parent-header__inner">
+          <h1 class="h1">Забота о здоровье вашей кошки</h1>
+          <p class="article-parent__preheader">
+            Советы, статьи и информация, разъясняющие, как правильно ухаживать
+            за кошкой.
+          </p>
+        </div>
+        @@include('filter-tag.html') 
+        @@include('../blocks/filter.html', {'title': 'статьи'})
+        @@include('../blocks/popular-articles.html')
+        @@include('../blocks/article-section.html', {"title": "Здоровье кожи и шерсти"})
+        @@include('../blocks/article-section.html', {"title": "Здоровье мочевыделительной системы"})
+        @@include('../blocks/article-section.html', {"title": "Здоровье пищеварительной системы"})
+        @@include('../blocks/article-animal-nick.html')
+      </div>
+    </main>
+    @@include('../blocks/footer.html')
+    <script src="../js/index.bundle.js"></script>
+    <script src="../js/article-parent.bundle.js"></script>
+  </body>
+</html>

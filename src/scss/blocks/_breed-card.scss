@@ -1,0 +1,35 @@
+.breed-card {
+  align-items: center;
+  background: var(--primary-white);
+  border-radius: 7px;
+  box-shadow: 0 0 20px 0 var(--primary-black-shadow);
+  display: flex;
+  flex-flow: column;
+  padding-bottom: 31px;
+
+  &__image {
+    border-radius: 7px 7px 0 0;
+    display: flex;
+    margin-bottom: 31px;
+    object-fit: contain;
+  }
+
+  &__title {
+    margin: 0 14px 18px;
+    text-align: center;
+  }
+
+  &__text {
+    flex-grow: 1;
+    padding-inline: 5px;
+    text-align: center;
+
+    &:not(:empty) {
+      margin-block: 5px 15px;
+    }
+  }
+
+  &__link {
+    --margin-inline: 28px;
+  }
+}

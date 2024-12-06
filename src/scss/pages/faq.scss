@@ -1,0 +1,33 @@
+.faq {
+  &__container {
+    margin-bottom: 100px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 40px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 58px;
+    text-align: center;
+
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+  }
+
+  &__description {
+    max-width: 470px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

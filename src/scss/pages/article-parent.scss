@@ -1,0 +1,36 @@
+@use "./filter-tag";
+@use "../base/mixins";
+
+.article-parent {
+  &-content h1 {
+    text-align: center;
+    margin-bottom: 40px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+  }
+
+  &-header {
+    --container-width: 1140px;
+
+    &__inner {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__preheader {
+    @include mixins.text("big");
+
+    & {
+      text-align: center;
+      color: var(--tertiary-gray);
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+  }
+}

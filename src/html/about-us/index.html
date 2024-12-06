@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/about-us.css" />
+  </head>
+  <body>
+    @@include('../blocks/header.html')
+    <main class="main-content about">
+      @@include('../blocks/breadcrumbs.html', {'paths': ['Главная', 'О нас']})
+      <div class="wrapper">
+        <div class="about__container">
+          <img class="about__image" src="../img/about-dog-cat.png" />
+          <div class="about__items">
+            <a href="#" class="about__item">
+              <span class="h3-medium about__item-title">Наша история</span>
+              <p class="about__item-text">
+                А также повышение осведомленности о положительной роли, которую
+                они играют вобществе:
+              </p>
+            </a>
+            <a href="/about-us/sustainability" class="about__item">
+              <span class="h3-medium about__item-title">
+                Устойчивое развитие
+              </span>
+              <p class="about__item-text">
+                А также повышение осведомленности о положительной роли, которую
+                они играют вобществе:
+              </p>
+            </a>
+            <a href="/about-us/our-nutritional-approach" class="about__item">
+              <span class="h3-medium about__item-title">
+                Нутриентный подход
+              </span>
+              <p class="about__item-text">
+                А также повышение осведомленности о положительной роли, которую
+                они играют вобществе:
+              </p>
+            </a>
+            <a href="/about-us/our-values" class="about__item">
+              <span class="h3-medium about__item-title"> Наши ценности </span>
+              <p class="about__item-text">
+                А также повышение осведомленности о положительной роли, которую
+                они играют вобществе:
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      @@include('../blocks/about-us-slider.html')
+    </main>
+    @@include('../blocks/footer.html')
+    <script src="../js/index.bundle.js"></script>
+    <script src="../js/about-us.bundle.js"></script>
+  </body>
+</html>

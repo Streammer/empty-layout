@@ -1,0 +1,12 @@
+.animal-nick {
+  --container-padding: 45px;
+  margin-bottom: 60px;
+
+  @media (max-width: 1023px) {
+    --container-padding: 30px;
+  }
+
+  @media (max-width: 1023px) {
+    --container-padding: 16px;
+  }
+}

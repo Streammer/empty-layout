@@ -1,0 +1,14 @@
+<div class="breadcrumbs wrapper">
+  <ul class="breadcrumbs__items">
+    @@for(var i = 0; i < paths.length - 1; i++) { 
+      <li class="breadcrumbs__item">
+        <a href="/" class="breadcrumbs__link"><span>`+paths[i]+`</span></a>
+      </li>
+    }
+    @@for(var j = paths.length - 1; j < paths.length; j++) { 
+      <li class="breadcrumbs__item">
+        <span class="breadcrumbs__span">`+paths[j]+`</span>
+      </li>
+    }
+  </ul>
+</div>

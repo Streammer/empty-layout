@@ -1,0 +1,35 @@
+.article-like-dislike {
+    margin-bottom: 60px;
+    display: flex;
+    gap: 10px;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+
+    h2#{&}__question {
+        margin-bottom: 0;
+      }
+
+    &__button-container {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__yes, &__no {
+        padding: 12px 22px;
+        svg {
+            width: 17px;
+            height: 18px;
+        }
+
+        &::after {
+            content: none;
+        }
+    }
+
+    &__no {
+        transform: scaleY(-1) ;
+    }
+}

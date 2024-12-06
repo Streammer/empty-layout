@@ -1,0 +1,42 @@
+.about-us-slide {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: var(--primary-white);
+    box-shadow: 0 0 20px 0 var(--primary-black-shadow);
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+
+    &__image {
+        max-height: 328px;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: contain;
+
+        @media (max-width: 767px) {
+            max-height: 294px;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+    
+    &__subtitle {
+        max-width: 70%;
+        margin-bottom: 10px;
+
+        @media (max-width: 767px) {
+            min-width: 100%;
+        }
+    }
+
+    &__description {
+        color: var(--tertiary-gray);
+    }
+}

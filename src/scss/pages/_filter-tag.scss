@@ -1,0 +1,23 @@
+@use "../base/mixins";
+
+.filter-tag {
+  margin-bottom: 40px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  &-wrapper {
+    padding-inline: 45px;
+
+    @media (max-width: 767px) {
+      padding-inline: 0px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

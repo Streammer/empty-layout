@@ -1,0 +1,36 @@
+<section class="main-our-products">
+  <div class="wrapper">
+    <div class="main-our-products__container dog">
+      <h2 class="h2-medium main-our-products__title">Наши продукты</h2>
+      <div class="main-our-products__header-controls-container">
+        <div class="main-our-products__header-controls">
+          <button class="main-our-products__header-control" data-type="cat">Для кошек</button
+          ><button class="active main-our-products__header-control" data-type="dog">
+            Для собак
+          </button>
+        </div>
+      </div>
+      <div class="main-our-products__cards">
+        <div class="swiper main-our-products__swiper">
+          <div class="swiper-wrapper">
+            @@include('./our-product-slide.html', {'title': 'Ветеринарное питание для кошек'})
+            @@include('./our-product-slide.html', {'title': 'Ветеринарное питание для кошек'})
+            @@include('./our-product-slide.html', {'title': 'Ветеринарное питание для кошек'})
+            @@include('./our-product-slide.html', {'title': 'Ветеринарное питание для кошек'})
+            @@include('./our-product-slide.html', {'title': 'Ветеринарное питание для кошек'})
+            @@include('./our-product-slide.html', {'title': 'Ветеринарное питание для кошек'})
+            @@include('./our-product-slide.html', {'title': 'Ветеринарное питание для кошек'})
+            @@include('./our-product-slide.html', {'title': 'Ветеринарное питание для кошек'})
+            @@include('./our-product-slide.html', {'title': 'Ветеринарное питание для кошек'})
+          </div>
+          <div class="main-our-products__controls ui-slider__controls">
+              <button class="ui-slider-controls__control-prev"></button>
+              <button class="ui-slider-controls__control-next"></button>
+              <div class="ui-slider-controls__control-pages"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

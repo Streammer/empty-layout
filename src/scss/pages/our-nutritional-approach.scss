@@ -1,0 +1,44 @@
+.our-nutritional-approach {
+    &__container {
+        margin-bottom: 90px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__content {
+        max-width: 785px;
+        margin: 0 auto 80px;
+        text-align: center;
+    }
+
+    &__title {
+       margin-bottom: 30px; 
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        margin: 0 auto 36px;
+    }
+
+    &__image {
+        max-width: 490px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        gap: 10px;
+        margin-bottom: 80px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 60px;
+        }
+    }
+}

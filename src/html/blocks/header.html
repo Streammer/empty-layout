@@ -1,0 +1,145 @@
+<header class="header" id="header">
+  <div class="header__desktop">
+    <div class="wrapper">
+      <div class="header__container">
+        <ul class="header-left-menu">
+          <li class="header-left-menu__item">
+            <a href="#" rel="noopener noreferrer" class="header-left-menu__link"
+              ><span>Для ветеринарных врачей</span></a
+            >
+          </li>
+          <li class="header-left-menu__item">
+            <a href="#" rel="noopener noreferrer" class="header-left-menu__link"
+              ><span>Для заводчиков</span></a
+            >
+          </li>
+        </ul>
+        <ul class="header-right-menu">
+          <li class="header-right-menu__item">
+            <button class="header-right-menu__trigger">
+              <span>Где купить</span>
+            </button>
+            <ul class="header-right-menu__submenu">
+              <li class="header-right-menu-sub-item">
+                <a class="header-right-menu-sub-item__link" href="#"
+                  ><span>Интернет магазин ROYAL CANIN<sup>®</sup></span></a
+                >
+              </li>
+              <li class="header-right-menu-sub-item">
+                <a class="header-right-menu-sub-item__link" href="#"
+                  ><span>Найти ветеринарную клинику</span></a
+                >
+              </li>
+              <li class="header-right-menu-sub-item">
+                <a class="header-right-menu-sub-item__link" href="#"
+                  ><span>Найти интернет-магазин партнера</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="header-right-menu__item">
+            <a href="/about-us/contact-us" class="header-right-menu__link"
+              ><span>Связаться с нами</span></a
+            >
+            <ul class="header-right-menu__submenu">
+              <li class="header-right-menu-sub-item">
+                <a
+                  href="tel:+78002003735"
+                  rel="noopener noreferrer"
+                  class="header-right-menu-sub-item__link active"
+                  ><span>+7 (800) 200 37 35</span></a
+                >
+                <p class="header-right-menu-sub-item__sub-name">
+                  Вы можете связаться с нами<br />каждый день с 9:00-21:00 (по
+                  МСК)
+                </p>
+              </li>
+              <li class="header-right-menu-sub-item">
+                <a
+                  class="header-right-menu-sub-item__link"
+                  href="https://t.me/RoyalCaninRussia_bot"
+                  target="_blank"
+                  ><span>Написать в Telegram</span></a
+                ><!---->
+              </li>
+              <li class="header-right-menu-sub-item">
+                <a
+                  class="header-right-menu-sub-item__link"
+                  href="https://wa.me/+78002003735"
+                  target="_blank"
+                  ><span>Написать в WhatsApp</span></a
+                ><!---->
+              </li>
+              <li class="header-right-menu-sub-item">
+                <a
+                  href="viber://chat?service=19298"
+                  rel="noopener noreferrer"
+                  class="header-right-menu-sub-item__link"
+                  ><span>Написать в Viber</span></a
+                ><!---->
+              </li>
+              <li class="header-right-menu-sub-item">
+                <a href="/about-us/faq" class="header-right-menu-sub-item__link"
+                  ><span>Часто задаваемые вопросы</span></a
+                ><!---->
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="header__container">
+        <hr class="header__separator" />
+      </div>
+      <div class="header__logo-container">
+        <div class="header__spacer"></div>
+        <a href="/" class="logo header__logo">
+          <svg>
+            <use xlink:href="./img/sprite.svg#logo"></use></svg
+        ></a>
+        <div class="header-user-menu">
+          <div class="header-user-menu__search-container">
+            <form class="header-search">
+              <div class="header-search__wrapper">
+                <svg class="header-search__icon header-search__icon--search">
+                  <use xlink:href="./img/sprite.svg#search"></use>
+                </svg>
+                <input
+                  class="header-search__input"
+                  type="text"
+                  placeholder="Поиск"
+                />
+                <svg class="header-search__icon header-search__icon--close">
+                  <use xlink:href="./img/sprite.svg#close--sm"></use>
+                </svg>
+              </div>
+            </form>
+          </div>
+          <ul class="header-user-menu__items">
+            <li class="header-user-menu-item">
+              <div class="header-profile">
+                <a href="#" class="header-profile__auth-icon">
+                  <svg>
+                    <use
+                      xlink:href="./img/sprite.svg#human-interaction"
+                    ></use></svg
+                ></a>
+              </div>
+            </li>
+            <li class="header-user-menu-item">
+              <div class="header-cart">
+                <a href="#">
+                  <svg>
+                    <use xlink:href="/img/sprite.svg#cart"></use></svg
+                  ><span class="visually-hidden">Корзина</span></a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    @@include('./header__sticky.html')
+  </div>
+  <div class="progress-scroll"></div>
+  @@include('./header-mobile.html') @@include('./header-mobile-bar.html')
+</header>

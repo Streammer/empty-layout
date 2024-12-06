@@ -1,0 +1,26 @@
+.recommendation-products-breed {
+  margin-bottom: 40px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    @media (max-width: 1023px) {
+      text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      text-align: left;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+  }
+}

@@ -1,0 +1,42 @@
+@use "../base/mixins";
+
+.article-detail {
+  &-header {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      @include mixins.text("big");
+      & {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__image {
+      margin-bottom: 20px;
+      height: 378px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  &-container {
+    .wrapper > img {
+      border-radius: 10px;
+      display: flex;
+      height: auto;
+      margin: 0 auto;
+      max-height: 378px;
+      max-width: 920px;
+      -o-object-fit: cover;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    > .wrapper {
+      margin-bottom: 40px;
+    }
+  }
+}

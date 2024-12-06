@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/catalog.css" />
+  </head>
+  <body>
+    @@include('../blocks/header.html')
+    <main class="main-content catalog">
+      @@include('../blocks/breadcrumbs.html', {'paths': ['Главная', 'Продукты для кошек']})
+      <div class="wrapper">
+        <div class="catalog__container">
+          <h1 class="h1 catalog__title">
+            Питание с учетом особых потребностей кошек
+          </h1>
+          <p class="catalog__description">
+            Каждый продукт разрабатывается с учетом пищевых потребностей,
+            связанных с особенностями здоровья вашего питомца, в соответствии с
+            его породой, возрастом и образом жизни.
+          </p>
+
+		  <div class="catalog__items">
+			@@include('../blocks/catalog-product-card.html', {'isRight': 'true', 'filled': ''})
+			@@include('../blocks/catalog-product-card.html', {'isRight': '', 'filled': ''})
+			@@include('../blocks/catalog-product-card.html', {'isRight': 'true', 'filled': ''})
+			@@include('../blocks/catalog-product-card.html', {'isRight': 'true', 'filled': 'true'})
+			@@include('../blocks/catalog-product-card.html', {'isRight': '', 'filled': 'true'})
+			@@include('../blocks/catalog-product-card.html', {'isRight': 'true', 'filled': 'true'})
+		  </div>
+        </div>
+      </div>
+    </main>
+    @@include('../blocks/footer.html')
+    <script src="../js/index.bundle.js"></script>
+  </body>
+</html>

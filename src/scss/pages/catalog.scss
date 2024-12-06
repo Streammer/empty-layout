@@ -1,0 +1,29 @@
+@use "../base/mixins";
+
+.catalog {
+  &__container {
+    margin-top: 55px;
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__description {
+    @include mixins.text("big");
+
+    & {
+      margin-bottom: 30px;
+      color: var(--tertiary-gray);
+      text-align: center;
+    }
+  }
+
+  &__items {
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+  }
+}

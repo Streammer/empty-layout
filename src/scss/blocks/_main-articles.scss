@@ -1,0 +1,32 @@
+.main-articles {
+  margin-bottom: 72px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  &__items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 20px;
+
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 20px;
+
+    @media (max-width: 1070px) {
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    }
+
+    @media (max-width: 767px) {
+      align-items: center;
+      flex-flow: column;
+    }
+  }
+}

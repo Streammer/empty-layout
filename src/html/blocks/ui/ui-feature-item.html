@@ -1,0 +1,14 @@
+<div class="ui-feature-item">
+  <span class="ui-feature-item__title">@@title</span>
+  @@if(text){
+  <div class="ui-feature-item__value-text">@@text</div>
+  } @@if(!text){
+  <div class="ui-feature-item__value">
+    @@for(var i = 0; i < value; i++) {
+    <div class="ui-feature-item__point active"></div>
+    } @@for(var i = value; i < 5; i++) {
+    <div class="ui-feature-item__point"></div>
+    }
+  </div>
+  }
+</div>

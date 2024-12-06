@@ -1,0 +1,35 @@
+@mixin text($size: "normal", $weight: "regular") {
+    color: var(--tertiary-gray);
+    line-height: 1.3;
+  
+    @if ($size == "normal") {
+      font-size: 16px;
+    }
+  
+    @if ($size == "big") {
+      font-size: 26px;
+    }
+  
+    @if ($size == "small") {
+      font-size: 14px;
+    }
+  
+    @if ($weight == "medium") {
+      font-weight: 500;
+    } @else {
+      font-weight: 400;
+    }
+  
+    @media (max-width: 1023px) {
+      font-size: 16px;
+      line-height: 1.3;
+
+      @if ($size == "big") {
+        font-size: 20px;
+      }
+  
+      @if ($size == "small") {
+        font-size: 14px;
+      }
+    }
+  }

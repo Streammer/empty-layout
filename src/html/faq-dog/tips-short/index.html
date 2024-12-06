@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>В чем особенности породы кокер-спаниель?</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/tips-short.css" />
+  </head>
+  <body>
+    @@include('../../blocks/header.html')
+    <main class="main-content tips-short">
+      @@include('../../blocks/breadcrumbs.html', {'paths': ['Главная', 'Собаки',
+      'В чем особенности породы кокер-спаниель?']})
+      <div class="wrapper">
+        <div class="tips-short__container">
+          <h1 class="h1 tips-short__title">
+            В чем особенности<br/> породы кокер-спаниель?
+          </h1>
+          <div class="ui-header-meta">
+            <div class="ui-date">11.11.2019</div>
+            <div class="ui-time-to-read">
+              <span class="ui-time-to-read__icon"
+                ><svg>
+                  <use xlink:href="../../img/sprite.svg#time"></use>
+                </svg> </span
+              ><span class="ui-time-to-read__title short"> Время чтения </span>
+              3 мин
+            </div>
+            <div class="ui-views-counter">
+              <span class="ui-views-counter__icon"
+                ><svg>
+                  <use xlink:href="../../img/sprite.svg#eye"></use>
+                </svg>
+              </span>
+              2 007
+              <span class="ui-views-counter__title short">просмотров</span>
+            </div>
+          </div>
+          <div class="tips-short__content">
+            <p class="tips-short__description">
+              Порода кокер-спаниель отличается крепким здоровьем и
+              выносливостью. Тем не менее собаки данной породы находятся в
+              группе риска по определенным заболеваниям: это проблемы органов
+              зрения (например, катаракта и глаукома), проблемы с кожей (в том
+              числе и меланома). Также следует обратить особое внимание к
+              поддержанию здоровья сердца. Поэтому для поддержания здоровья
+              собак этой породы необходимо регулярно проводить регулярные визиты
+              к ветеринарному специалисту.
+            </p>
+          </div>
+          <div class="tips-short__content">
+            @@include('../../blocks/ui/ui-article-author.html')
+          </div>
+          <div class="ui-animal-faq">
+            <h2 class="h2-medium">Похожие вопросы</h2>
+            <ul class="ui-animal-faq__list">
+              <li class="ui-animal-faq__item">
+                <a class="ui-animal-faq__link"
+                  >Что делать, если собака боится людей?</a
+                >
+              </li>
+            </ul>
+            <button class="ui-button ui-animal-faq__button-more">
+              Посмотреть все вопросы
+            </button>
+          </div>
+          @@include('../../blocks/recomendation-products.html')
+        </div>
+      </div>
+    </main>
+    @@include('../../blocks/footer.html')
+    <script src="../../js/index.bundle.js"></script>
+    <script src="../../js/faq-dog.bundle.js"></script>
+  </body>
+</html>

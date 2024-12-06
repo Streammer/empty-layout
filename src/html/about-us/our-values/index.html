@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Наши ценности</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/our-values.css" />
+  </head>
+  <body>
+    @@include('../../blocks/header.html')
+    <main class="main-content our-values">
+      @@include('../../blocks/breadcrumbs.html', {'paths': ['Главная', 'О нас', 'Наши ценности']})
+      <div class="wrapper">
+        <div class="our-values__container">
+          <h1 class="h1 our-values__title">Здоровье питомцев — наша главная забота</h1>
+          <p class="our-values__text">
+            Все, что мы делаем, обусловлено стремлением заботиться о здоровье и
+            благополучии каждого питомца
+          </p>
+          <img class="our-values__image" src="../../img/our-values-dog.png" alt="" />
+          <div class="our-values__items">
+            <div class="our-values__item">
+              <h2 class="our-values__item-title">В поисках знаний</h2>
+              <p class="our-values__item-text text-body">
+                Благодаря обширным знаниям о потребностях кошек и собак, мы
+                создаем питание с учетом особых потребностей животных. Мы
+                никогда не прекращаем совершенствоваться и все проверяем на
+                собственном опыте. Вот почему мы сотрудничаем с ведущими
+                учеными, ветеринарными врачами и специалистами по поведению и
+                поддерживаем постоянный диалог с владельцами кошек и собак по
+                всему миру.
+              </p>
+            </div>
+            <div class="our-values__item">
+              <h2 class="our-values__item-title">
+                Здоровье питомцев — наша главная забота
+              </h2>
+              <p class="our-values__item-text text-body">
+                Мы вкладываем в свою профессию сердце и душу, и прилагаем все
+                усилия, чтобы сделать мир для домашних животных и их владельцев
+                лучше.
+              </p>
+            </div>
+            <div class="our-values__item">
+              <h2 class="our-values__item-title">
+                Благополучие кошек и собак — прежде всего
+              </h2>
+              <p class="our-values__item-text text-body">
+                Мы всегда ставим потребности домашних животных на первое место.
+                Это задает четкое направление нашим исследованиям, и на этом
+                основана пищевая ценность всех наших продуктов, которые
+                обеспечивают кошкам и собакам более долгую и здоровую жизнь.
+              </p>
+            </div>
+            <div class="our-values__item">
+              <h2 class="our-values__item-title">Точность во всем</h2>
+              <p class="our-values__item-text text-body">
+                Благодаря глубоким знаниям и значительному опыту, мы понимаем
+                особые потребности животных и знаем, какие питательные вещества
+                им требуются для сохранения великолепной формы. Такая
+                индивидуализация обеспечивает высокое качество и видимый
+                результат от каждой характеристики наших продуктов — от формы,
+                текстуры, вкусовых качеств и усвояемости до безопасности и
+                отслеживаемости.
+              </p>
+            </div>
+            <div class="our-values__item">
+              <h2 class="our-values__item-title">
+                Уважение к потребностям кошек и собак
+              </h2>
+              <p class="our-values__item-text text-body">
+                Мы уважаем в кошках и собаках их природное совершенство. Это
+                уважение рождается из глубокого понимания их природных
+                особенностей и функциональных потребностей. Каждое решение в
+                компании мы принимаем исходя из уважения к питомцам, именно это
+                качество определяет способ ведения бизнеса.
+              </p>
+            </div>
+            <div class="our-values__item">
+              <h2 class="our-values__item-title">Устойчивое развитие</h2>
+              <p class="our-values__item-text text-body">
+                Наш подход к обеспечению устойчивого развития заключается в том,
+                что мы относимся к домашним животным, людям и планете с
+                уважением, которого они заслуживают.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="our-values__bottom">
+            @@include('../../blocks/additionally-section.html')
+        </div>
+      </div>
+    </main>
+    @@include('../../blocks/footer.html')
+    <script src="../js/index.bundle.js"></script>
+  </body>
+</html>

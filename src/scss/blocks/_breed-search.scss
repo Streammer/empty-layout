@@ -1,0 +1,59 @@
+.breed-search {
+  border-radius: 30px;
+  box-shadow: 0 0 20px 0 var(--primary-black-shadow);
+  padding: 6px 51px;
+  margin-bottom: 40px;
+
+  &__container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+
+    @media (max-width: 767px) {
+      align-items: center;
+      flex-flow: column;
+      gap: 10px;
+      padding: 30px 14px;
+    }
+  }
+
+  &__image {
+    max-width: 236px;
+    width: 100%;
+
+    @media (max-width: 767px) {
+      order: 1;
+    }
+
+    &--right {
+      order: 1;
+
+      @media (max-width: 767px) {
+        order: 0;
+      }
+    }
+  }
+
+  &__content {
+    padding-block: 50px;
+
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0 auto 26px;
+    text-align: center;
+    width: 306px;
+
+    @media (max-width: 767px) {
+      width: auto;
+    }
+  }
+}

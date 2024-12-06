@@ -1,0 +1,120 @@
+.ui-tab-breed-v3 {
+  display: flex;
+  flex-grow: 1;
+  gap: 10px 30px;
+  justify-content: space-between;
+  padding: 10px 80px;
+
+  @media (max-width: 1023px) {
+    align-items: center;
+    flex-flow: column;
+    padding: 10px 23px;
+  }
+
+  &__image-container {
+    position: relative;
+    width: 344px;
+    height: 248px;
+  }
+
+  img.ui-tab-breed-v3__image {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+
+  &__image-button {
+    position: absolute;
+    align-items: center;
+    background: none;
+    background: var(--secondary-interface);
+    border: none;
+    border-radius: 55px;
+    color: var(--secondary-text);
+    cursor: pointer;
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+    height: 56px;
+    justify-content: center;
+    padding: 0;
+    width: 56px;
+
+    &.active {
+      background: var(--tertiary-golden);
+      pointer-events: none;
+
+      &:before {
+        align-items: center;
+        background: var(--tertiary-golden-shadow);
+        border-radius: 100px;
+        bottom: -6px;
+        content: attr(data-index);
+        display: flex;
+        justify-content: center;
+        left: -6px;
+        position: absolute;
+        right: -6px;
+        top: -6px;
+        z-index: 0;
+      }
+    }
+
+    &--1 {
+      left: 170px;
+      top: 26px;
+    }
+
+    &--2 {
+      left: 239px;
+      top: 39px;
+    }
+
+    &--3 {
+      left: 131px;
+      top: 123px;
+    }
+
+    &--4 {
+      left: 28px;
+      top: 66px;
+    }
+
+    &--5 {
+      left: 226px;
+      top: 118px;
+    }
+  }
+
+  &__text {
+    &-container {
+      display: flex;
+      flex-flow: column;
+      width: 310px;
+
+      @media (max-width: 1023px) {
+        max-width: 310px;
+        width: auto;
+      }
+    }
+
+    &-title {
+      margin: 76px 0 3px;
+
+      @media (max-width: 1023px) {
+        margin-top: 0;
+      }
+    }
+
+    &-text {
+      margin: 0;
+
+      @media (max-width: 1023px) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

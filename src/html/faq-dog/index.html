@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ответы на вопросы о собаках</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/faq-dog.css" />
+  </head>
+  <body>
+    @@include('../blocks/header.html')
+    <main class="main-content faq-dog">
+      @@include('../blocks/breadcrumbs.html', {'paths': ['Главная', 'Собаки',
+      'Ответы на вопросы о собаках']})
+      <div class="wrapper">
+        <div class="faq-dog__container">
+          <h1 class="h1 faq-dog__title">Ответы на вопросы о собаках</h1>
+          @@include('../blocks/breed-search.html', {'isRight': ''})
+          <div class="ui-animal-faq">
+            <div class="ui-animal-faq__section">
+              <h2 class="h2-medium">Выберите одну из категорий для изучения</h2>
+              @@include('../blocks/ui/ui-accordion-group-icon.html')
+            </div>
+            <div class="ui-animal-faq__section">
+              <h2 class="h2-medium">Часто задаваемые вопросы</h2>
+              <ul class="ui-animal-faq__list">
+                <li class="ui-animal-faq__item">
+                  <a class="ui-animal-faq__link"
+                    >Что делать, если собака боится людей?</a
+                  >
+                </li>
+                <li class="ui-animal-faq__item">
+                  <a class="ui-animal-faq__link"
+                    >Что делать, если собаке попала вода в ухо?</a
+                  >
+                </li>
+                <li class="ui-animal-faq__item">
+                  <a class="ui-animal-faq__link"
+                    >До скольки лет собаки могут рожать?</a
+                  >
+                </li>
+                <li class="ui-animal-faq__item">
+                  <a class="ui-animal-faq__link"
+                    >Как кормить собаку после стерилизации?</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <button class="ui-button ui-animal-faq__button-more">
+              Посмотреть все вопросы
+            </button>
+            <img class="ui-animal-faq__image-mobile" src="../img/faq-dog.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('../blocks/footer.html')
+    <script src="../js/index.bundle.js"></script>
+    <script src="../js/faq-dog.bundle.js"></script>
+  </body>
+</html>

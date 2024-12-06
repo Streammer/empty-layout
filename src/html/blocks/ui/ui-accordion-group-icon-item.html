@@ -1,0 +1,17 @@
+<li class="ui-accordion-group-item-icon">
+  <button class="ui-accordion-group-item-icon__button">
+    <svg class="ui-accordion-group-item-icon__icon">
+      <use xlink:href="/img/sprite.svg#@@icon"></use>
+    </svg>
+    <span class="ui-accordion-group-item-icon__question">@@question</span>
+  </button>
+  <div class="ui-accordion-group-item-icon__answer">
+    <ul class="ui-accordion-group-item-icon__list">
+      @@for (var i = 0; i < 10; i++) {
+      <li class="ui-accordion-group-item-icon__list-item">
+        <a class="ui-accordion-group-item-icon__link"> @@answer </a>
+      </li>
+      }
+    </ul>
+  </div>
+</li>

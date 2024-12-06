@@ -1,0 +1,124 @@
+.sustainability {
+  &__container {
+
+    @media (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+  }
+
+  &__header {
+    max-width: 688px;
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__description {
+    color: var(--tertiary-gray);
+  }
+
+  &__section {
+    margin-bottom: 60px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 32px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+
+      @media (max-width: 767px) {
+        font-weight: 500;
+      }
+    }
+
+    p {
+      color: var(--tertiary-gray);
+    }
+
+    &-list {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+
+      @media (max-width: 767px) {
+        gap: 10px;
+      }
+    }
+
+    &-item {
+      padding: 32px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px 0 var(--primary-black-shadow);
+      color: var(--tertiary-gray);
+
+      @media (max-width: 767px) {
+        padding: 20px;
+      }
+
+      &-title {
+        margin-bottom: 15px;
+
+        @media (max-width: 767px) {
+            font-weight: 500;
+        }
+      }
+    }
+
+    &-two-columns {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      img {
+        max-width: 226px;
+        width: 100%;
+        object-fit: contain;
+      }
+
+      p {
+        max-width: 500px;
+        font-size: 20px;
+        line-height: 1.4;
+
+        @media (max-width: 767px) {
+          max-width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    &--center {
+      text-align: center;
+
+      @media (max-width: 767px) {
+        text-align: left;
+      }
+
+      p {
+        padding-inline: 70px;
+
+        @media (max-width: 767px) {
+          padding-inline: 0;
+        }
+      }
+
+      a,
+      button {
+        max-width: 245px;
+        margin: 20px auto 0;
+      }
+    }
+  }
+}

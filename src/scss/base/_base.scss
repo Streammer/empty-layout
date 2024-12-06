@@ -1,0 +1,180 @@
+@use "mixins";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-white);
+  color: var(--tertiary-gray);
+  font-family: var(--font-main);
+  line-height: 1.3;
+}
+
+.h1 {
+  color: var(--primary-red);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.1;
+
+  @media (max-width: 1023px) {
+    line-height: 1.4;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 30px;
+    line-height: 1.34;
+  }
+}
+
+.h1-medium {
+  color: var(--primary-red);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+
+.h2 {
+  color: var(--primary-red);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+
+  @media (max-width: 1023px) {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.h2-medium,
+.typography-container h2 {
+  color: var(--primary-red);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  @media (max-width: 1023px) {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.typography-container h2 {
+  margin-bottom: 20px;
+}
+
+.h3 {
+  color: var(--primary-red);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+
+  @media (max-width: 1023px) {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+.h3-medium,
+.typography-container h3 {
+  color: var(--primary-red);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+
+  @media (max-width: 1023px) {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+.h4 {
+  color: var(--primary-red);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+
+  @media (max-width: 1023px) {
+    font-size: 16px;
+  }
+}
+
+.h4-medium,
+.typography-container h4 {
+  color: var(--primary-red);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.text-body, .typography-container p {
+  @include mixins.text("normal");
+}
+
+.typography-container small {
+  @include mixins.text("small");
+}
+
+.typography-small-medium {
+  @include mixins.text("small", "medium");
+}
+
+.visually-hidden {
+  clip-path: inset(100%);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  z-index: -9999;
+  clip: rect(0 0 0 0);
+  border: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.bg-gray {
+  background-color: var(--primary-light-gray);
+}
+
+.rounded-lg {
+  border-radius: 30px!important;
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Детальная страница статьи</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/article-detail.css" />
+  </head>
+  <body>
+    @@include('../blocks/header.html')
+    <main class="main-content article-detail-content">
+      @@include('../blocks/breadcrumbs.html', 'paths': ['Главная', 'Статьи', 'Где можно купить щенка?'])
+      <div class="wrapper article-detail-header">
+        <div class="article-detail-header__title">
+          <h1 class="h1">Где можно купить щенка?</h1>
+        </div>
+        <div class="ui-header-meta">
+          <div class="ui-date">11.11.2019</div>
+          <div class="ui-time-to-read">
+            <span class=" ui-time-to-read__icon"
+              ><svg>
+                <use xlink:href="../img/sprite.svg#time"></use>
+              </svg> </span
+            ><span class="ui-time-to-read__title short"> Время чтения </span>
+            3 мин
+          </div>
+          <div class="ui-views-counter">
+            <span class=" ui-views-counter__icon"
+              ><svg>
+                <use xlink:href="../img/sprite.svg#eye"></use>
+              </svg>
+            </span>
+            2 007
+            <span class="ui-views-counter__title short">просмотров</span>
+          </div>
+        </div>
+        <div class="article-detail-header__content">
+          <p class="article-detail-header__description">
+            Покупка щенка — это захватывающий момент, но с этической и
+            практической точки зрения очень важно ответственно отнестись к
+            предварительному изучению соответствующей информации, чтобы
+            убедиться, что вы приобретаете здоровую собаку.
+          </p>
+          <img
+            class="article-detail-header__image"
+            src="../img/article-dog.jpg"
+            alt=""
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="article-detail-container typography-container">
+        <div class="wrapper">
+          <p>
+            Если вы решили завести щенка, вы можете купить его у заводчика,
+            взять из приюта или у знакомых. Покупка щенка — это захватывающий
+            момент, но с этической и практической точки зрения очень важно
+            ответственно отнестись к нему. Предварительно изучите доступную
+            информацию о выбранной породе, чтобы убедиться, что характер
+            животного соответствует вашему образу жизни, поговорите с
+            заводчиком, обязательно убедитесь, что вы приобретаете здоровую
+            собаку.
+          </p>
+          <h2>Содержание</h2>
+          <ul class="ui-list">
+            <li class="ui-list__item">
+              <a class="ui-list__link" href="#">
+                Преимущества покупки собаки у заводчика
+              </a>
+            </li>
+            <li class="ui-list__item">
+              <a class="ui-list__link" href="#"
+                >Факторы, которые нужно учитывать при покупке собаки у
+                заводчика</a
+              >
+            </li>
+            <li class="ui-list__item">
+              <a class="ui-list__link" href="#">Где купить собаку</a>
+            </li>
+            <li class="ui-list__item">
+              <a class="ui-list__link" href="#"
+                >Важные советы при покупке щенка</a
+              >
+            </li>
+          </ul>
+          <h2>Преимущества покупки собаки у заводчика</h2>
+          <ol class="ui-list-number">
+            <li class="ui-list-number__item">
+              Когда вы покупаете собаку, вы наверняка хотите получить
+              породистого щенка.
+            </li>
+            <li class="ui-list-number__item">
+              Если вы купите щенка с родословной у заводчика, то сможете лучше
+              представить размеры и внешний вид вашего нового питомца во
+              взрослом возрасте.
+            </li>
+            <li class="ui-list-number__item">
+              Вы также сможете предсказать темперамент выбранной собаки в
+              зависимости от породы и характера ее родителей, а также задать
+              заводчику вопросы о том, каким образом проводилась социализация
+              щенка.
+            </li>
+            <li class="ui-list-number__item">
+              У заводчика вы сможете узнать полный ветеринарный анамнез вашего
+              щенка.
+            </li>
+            <li class="ui-list-number__item">
+              Вы можете получить более полное представление о физическом и
+              эмоциональном состоянии щенка.
+            </li>
+            <li class="ui-list-number__item">
+              В случае со взрослой собакой из приюта это сделать намного
+              сложнее.
+            </li>
+          </ol>
+          <h2>
+            Факторы, которые нужно учитывать при покупке собаки у заводчика
+          </h2>
+          <ul class="ui-list ui-list--full">
+            <li class="ui-list__item">
+              Помните, что некоторые породы могут быть предрасположены к
+              определенным заболеваниям.
+            </li>
+            <li class="ui-list__item">
+              Вам потребуется много времени и терпения, чтобы дрессировать щенка
+              и поддерживать его развитие и адаптацию в семье.
+            </li>
+          </ul>
+          <img src="../img/article-dog-1.jpg" alt="" loading="lazy" />
+          <br />
+          <br />
+          @@include('../blocks/recomendation-products.html')
+          <h2>Где купить собаку</h2>
+          <p>
+            Важно тщательно изучить предложения, чтобы найти заводчика с хорошей
+            репутацией и не покупать щенков в зоомагазинах и супермаркетах. Вы
+            можете спросить своего ветеринарного врача о заводчиках поблизости
+            от вас.
+          </p>
+          <br />
+          <br />
+          <h2>Ответственный заводчик:</h2>
+          <ul class="ui-list ui-list--full ui-list--checked">
+            <li class="ui-list__item">
+              Предложит вам навестить своего щенка несколько раз
+            </li>
+            <li class="ui-list__item">
+              Не отлучает щенков от матери, пока им не исполнится восемь недель
+            </li>
+            <li class="ui-list__item">
+              Продаст щенка по договору с обещанием забрать его обратно в случае
+              возникновения проблем
+            </li>
+            <li class="ui-list__item">Начнет социализацию щенков</li>
+          </ul>
+          <br />
+          @@include('../blocks/quote-section.html')
+          <br />
+          <br />
+          <h2>С заводчиком не стоит иметь дела в следующих случаях</h2>
+          <div class="ui-list-right-image">
+            <ul class="ui-list ui-list--message">
+              <li class="ui-list__item">
+                Если вам не показывают мать и других щенков
+              </li>
+              <li class="ui-list__item">
+                Если вам предлагают встретиться в общественном месте
+              </li>
+              <li class="ui-list__item">
+                Если вам не могут предоставить документы, подтверждающие
+                проведение вакцинации и дегельминтизации, справку о состоянии
+                здоровья щенка или его ветеринарный паспорт
+              </li>
+              <li class="ui-list__item">
+                Если вам предлагают встретиться в общественном месте
+              </li>
+              <li class="ui-list__item">
+                Если отказываются дать контактные данные лечащего ветеринарного
+                врача щенка
+              </li>
+              <li class="ui-list__item">
+                Если щенок не имеет микрочипа (требование закона в некоторых
+                странах)
+              </li>
+            </ul>
+            <img src="../img/article-dog-2.jpg" alt="" loading="lazy" />
+          </div>
+          <h2>Важные советы при покупке щенка</h2>
+          <ol class="ui-list-number">
+            <li class="ui-list-number__item">
+              Если есть возможность, посетите питомник не менее двух раз, прежде
+              чем забирать щенка домой
+            </li>
+            <li class="ui-list-number__item">
+              Узнайте больше об особенностях и темпераменте выбранной вами
+              породы
+            </li>
+            <li class="ui-list-number__item">
+              Убедитесь, что щенки больше не нуждаются в материнском молоке
+            </li>
+            <li class="ui-list-number__item">
+              Узнайте, сколько лет матери. Она должна быть старше одного года,
+              но не слишком старой
+            </li>
+            <li class="ui-list-number__item">
+              Проверьте условия содержания матери и помета
+            </li>
+            <li class="ui-list-number__item">
+              Познакомьтесь со щенком и поиграйте с ним
+            </li>
+            <li class="ui-list-number__item">
+              Заранее привезите для щенка подстилку (например плед), чтобы
+              познакомить его с запахом вашего дома
+            </li>
+            <li class="ui-list-number__item">
+              Убедитесь, что у щенка нет выделений из глаз, ушей и половых
+              органов
+            </li>
+          </ol>
+          <p>
+            Поиск заводчика и информации о вашей будущей собаке займет некоторое
+            время, но благодаря этому вам будет легче обеспечить благополучие
+            щенка и помочь ему освоиться в вашем доме
+          </p>
+          <br/>
+          <table class="ui-table">
+            <thead>
+              <tr>
+                <th>Размер собак</th>
+                <th>Представители  </th>
+                <th>Возраст наступления первой течки</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Мелкие </b>
+                </td>
+                <td>
+                  Чихуахуа, йоркширский терьер, померанский шпиц, русский
+                  той-терьер
+                </td>
+                <td>6-9 месяцев</td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Средние</b>
+                </td>
+                <td>
+                  Английский бульдог, бордер-колли, английский кокер-спаниель,
+                  американский стафордширский терьер, лабрадор-ретривер
+                </td>
+                <td>8-12 месяцев</td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Крупные и очень крупные</b>
+                </td>
+                <td>
+                  Немецкий дог, тибетский мастиф, кавказская овчарка, ирландский
+                  волкодав 
+                </td>
+                <td>12-18 месяцев </td>
+              </tr>
+            </tbody>
+          </table>
+          <br />
+          <br />
+          <div class="ui-expert-card">
+            <div class="ui-expert-card__container">
+              <h2 class="ui-expert-card__title">ЭКСПЕРТ ROYAL CANIN®</h2>
+              <div class="ui-expert-card__content">
+                <p><strong>Имя:</strong> Анна</p>
+                <p>
+                  <strong>Специализация:</strong> Врач ветеринарной медицины,
+                  эксперт по питанию домашних животных с опытом работы более 18
+                  лет.
+                </p>
+                <p>
+                  <strong>Образование:</strong> Высшее. Академия ветеринарной
+                  медицины, специализация «Врач ветеринарной медицины».
+                </p>
+              </div>
+            </div>
+            <div class="ui-expert-card__image">
+              <img src="../img/avatar-1.png" alt="" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        @@include('../blocks/article-section.html', {"title": "Статьи по теме"})
+        @@include('../blocks/article-detail-sources-section.html')
+        @@include('../blocks/article-like-dislike.html')
+      </div>
+    </main>
+    @@include('../blocks/footer.html')
+    <script src="../js/index.bundle.js"></script>
+    <script src="../js/article-detail.bundle.js"></script>
+  </body>
+</html>

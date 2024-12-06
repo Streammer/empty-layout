@@ -1,0 +1,24 @@
+<section class="article-section">
+  <div class="wrapper content-wrapper">
+    <div class="article-section__header">
+      <h2 class="article-section__title h2-medium">@@title</h2>
+      <button class="ui-link decorated article-section__more desktop">
+        Больше статей
+      </button>
+    </div>
+    <ul class="article-section__list">
+      <li class="article-section__item">
+        @@include('article-card.html', {showPopular: ''})
+      </li>
+      <li class="article-section__item">
+        @@include('article-card.html', {showPopular: ''})
+      </li>
+      <li class="article-section__item">
+        @@include('article-card.html', {showPopular: ''})
+      </li>
+    </ul>
+    <button class="ui-link decorated article-section__more mobile">
+      Больше статей
+    </button>
+  </div>
+</section>
